@@ -2,7 +2,7 @@
 
 <plugin xmlns="http://cordova.apache.org/ns/plugins/1.0"
            id="cordova-android-notification-pref"
-      version="1.0.1">
+      version="1.0.2">
     <name>cordova-android-notification-pref</name>
     <description>Cordova Notification Pref</description>
     <license>Apache 2.0</license>
@@ -21,6 +21,6 @@
                 <param name="onload" value="true" />
             </feature>
         </config-file>
-        <source-file src="src/android/NotificationPref.java" target-dir="src/cordova/plugins"/>
+        <source-file src="src/android/NotificationPref.java" target-dir="src/cordova/plugins/NotificationPref"/>
     </platform>
 </plugin>
