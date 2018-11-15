@@ -9,7 +9,7 @@ var NotificationPref = {
         exec(
             successCallback,
             errorCallback,
-            'NotificationsPref',
+            'NotificationPref',
             'openSettings',
             [options]
         );
