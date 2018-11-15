@@ -1,0 +1,34 @@
+{
+    "name": "cordova-android-notification-pref",
+    "description": "Cordova Android Notification pref",
+    "version": "1.0.0",
+    "homepage": "",
+    "repository": {
+        "type": "git",
+        "url": ""
+    },
+    "bugs": {
+        "url": ""
+    },
+    "cordova": {
+        "id": "cordova-android-notification-pref",
+        "platforms": [
+            "android"
+        ]
+    },
+    "keywords": [
+        "ecosystem:cordova",
+        "ecosystem:phonegap"
+    ],
+    "engines":{
+        "cordova" : ">=3.0.0"
+    },
+    "author": "",
+    "license": "MIT",
+    "scripts": {
+        "test": "jasmine-node --color spec"
+    },
+    "devDependencies": {
+        "jasmine-node": "1.14.5"
+    }
+}
