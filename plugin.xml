@@ -2,7 +2,7 @@
 
 <plugin xmlns="http://cordova.apache.org/ns/plugins/1.0"
            id="cordova-android-notification-pref"
-      version="1.0.2">
+      version="1.0.3">
     <name>cordova-android-notification-pref</name>
     <description>Cordova Notification Pref</description>
     <license>Apache 2.0</license>

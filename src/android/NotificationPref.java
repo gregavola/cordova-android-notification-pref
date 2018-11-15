@@ -1,4 +1,4 @@
-package com.cordova.plugins.NotificationPref;
+package cordova.plugins;
 
 import org.apache.cordova.CordovaInterface;
 import org.apache.cordova.CordovaPlugin;
@@ -6,7 +6,6 @@ import org.apache.cordova.CordovaWebView;
 import org.apache.cordova.CallbackContext;
 
 import android.content.Intent;
-import android.app.Activity;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -36,13 +35,13 @@ public class NotificationPref extends CordovaPlugin {
 		intent.setAction("android.settings.APP_NOTIFICATION_SETTINGS");
 
 		//for Android 5-7
-		intent.putExtra("app_package", getPackageName());
-		intent.putExtra("app_uid", getApplicationInfo().uid);
+		intent.putExtra("app_package", cordova.getActivity().getPackageName());
+		intent.putExtra("app_uid", cordova.getActivity().getApplicationInfo().uid);
 
 		// for Android O
-		intent.putExtra("android.provider.extra.APP_PACKAGE", getPackageName());
+		intent.putExtra("android.provider.extra.APP_PACKAGE", cordova.getActivity().getPackageName());
 
-		startActivity(intent);
+		cordova.getActivity().startActivity(intent);
 
 		callbackContext.success("true");
 	}
