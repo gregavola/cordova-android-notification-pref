@@ -16,14 +16,10 @@ public class NotificationPref extends CordovaPlugin {
 	@Override
 	public void initialize(CordovaInterface cordova, CordovaWebView webView) {
 		super.initialize(cordova, webView);
-		// Plugin specific one off initialization code here, this one doesn't
-		// have any
 	}
 
 	@Override
 	public boolean execute(String action, JSONArray args, CallbackContext callbackContext) throws JSONException {
-		// Which method was called? With many methods in a
-		// plugin we could do this another way e.g. reflection
 		if ("openSettings".equals(action)) {
 			openNotifications(callbackContext);
 			return true;
